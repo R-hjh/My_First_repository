@@ -9,7 +9,7 @@
   </script>
 </head>
 <body>
-  
+
   <div style="margin: .5in; height: 400px;">
     <p><b><code>text</code></b></p>
     <form>
@@ -19,6 +19,7 @@
         <option value="red">red</option>
         <option value="blue">blue</option>
         <option value="yellow">yellow</option>
+        <option value="purple">Purple</option>
       </select>
 
       <p><b><code>bgColor</code></b></p>
@@ -27,17 +28,20 @@
         <option value="white">white</option>
         <option value="lightgrey">gray</option>
       </select>
+
       <p><b><code>link</code></b></p>
       <select onChange="setBodyAttr('link',
         this.options[this.selectedIndex].value);">
         <option value="blue">blue</option>
         <option value="green">green</option>
       </select>
+
       <small>
         <a href="http://some.website.tld/page.html" id="sample">
           (sample link)
         </a>
       </small><br />
+
       <input type="button" value="version" onclick="ver()" />
     </form>
 

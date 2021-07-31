@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicios de Eventos</title>
+    <script src="JS/Evenos.js"></script>
+
+    <script type="text/javascript" src="Driver/driver/dist/driver.min.js"></script>
+    <link rel="stylesheet" href="Driver/driver/dist/driver.min.css">
+
+  </head>
+  <body>
+    <button onclick="tur()"> tur <button>
+    <p id="txt1">dar click en el boton para mostra la Fecha</p>
+    <button id="Elemento1" onclick="displayDate1()">¿Que hora es?</button>
+    <br><br>
+    <button id="btnEjer2">Intentalo</button>
+    <br><br>
+    <button id="btnEjer3">Agregar Evento</button>
+
+    <p id="Eje1"></p><br>
+    <p id="Eje2"></p><br>
+    <p id="Eje3"></p><br>
+
+    <p id="txt2">En este Ejercicio usamos la función addEventListener() para ejecutar
+      la función ya antes usada Date(), cuando el usuario de click sobre el
+      Boton "Alerta"
+    </p>
+    <br>
+    <button id="btnEjer4">"Alerta"</button>
+    <br><p id="txt3">Agregar diferentes Eventos al mismo Elemento HTML</p>
+    <button id="btnEjer5">Eventos</button>
+
+    <p id="Eje5"></p>
+
+
+    <script>
+      //document.getElementById("btnEjer2").onclick = displayDate2;
+      document.getElementById("btnEjer2").onclick = tur;
+      document.getElementById("btnEjer3").addEventListener("click", displayDate3);
+      document.getElementById("btnEjer4").addEventListener("click", Alerta);
+      var x = document.getElementById("btnEjer5");
+      x.addEventListener("mouseover", sobre);
+      x.addEventListener("click", click);
+      x.addEventListener("mouseout", fuera);
+    </script>
+
+    <!--
+    <script src="Guide\jquery-guide-master\src\jquery.guide.js"></script>
+    -->
+
+    <!-- Uso del complemento Anno
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+    <script src="https://rawgit.com/iamdanfox/anno.js/gh-pages/dist/anno.js" type="text/javascript"></script>
+    <script src="https://rawgit.com/litera/jquery-scrollintoview/master/jquery.scrollintoview.js" type="text/javascript"></script>
+
+    <link href="https://rawgit.com/iamdanfox/anno.js/gh-pages/dist/anno.css" rel="stylesheet" type="text/css" />
+
+
+    <script src="Anno/anno.js-gh-pages/bower_components/jquery/dist/distjquery.min.js"></script>
+    <script src="Anno/anno.js-gh-pages/dist/anno.js"></script>
+    <script src="Anno/anno.js-gh-pages/bower_components/scrollintoview/jquery.scrollintoview.js"></script>
+    <script src="Anno/anno.js-gh-pages/dist/anno.css"></script>
+
+    -->
+
+
+  </body>
+</html>
